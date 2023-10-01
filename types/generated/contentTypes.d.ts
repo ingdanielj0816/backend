@@ -367,6 +367,7 @@ export interface ApiQuestionQuestion extends Schema.CollectionType {
     singularName: 'question';
     pluralName: 'questions';
     displayName: 'Question';
+    description: '';
   };
   options: {
     draftAndPublish: true;
