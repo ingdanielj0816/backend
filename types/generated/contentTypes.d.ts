@@ -373,12 +373,12 @@ export interface ApiQuestionQuestion extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    Question: Attribute.Text & Attribute.Unique;
-    Answer1: Attribute.Text;
-    Answerc: Attribute.Text;
-    Answer3: Attribute.Text;
-    Answer4: Attribute.Text;
-    Category: Attribute.String;
+    Question: Attribute.Text & Attribute.Required & Attribute.Unique;
+    Answer1: Attribute.Text & Attribute.Required;
+    Answerc: Attribute.Text & Attribute.Required;
+    Answer3: Attribute.Text & Attribute.Required;
+    Answer4: Attribute.Text & Attribute.Required;
+    Category: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

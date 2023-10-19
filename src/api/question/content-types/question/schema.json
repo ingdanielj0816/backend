@@ -14,22 +14,29 @@
   "attributes": {
     "Question": {
       "type": "text",
-      "unique": true
+      "unique": true,
+      "required": true
     },
     "Answer1": {
-      "type": "text"
+      "type": "text",
+      "unique": false,
+      "required": true
     },
     "Answerc": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "Answer3": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "Answer4": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "Category": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }
